@@ -21,6 +21,13 @@ public class Course {
 		
 	}
 	
+	public Course(String id, String name, String description, Topic topic) {
+		this.id = id;
+		this.name = name;
+		this.description = description;
+		this.topic = topic;
+	}
+	
 	public void setId(String id) {
 		this.id = id;
 	}
