@@ -1,0 +1,10 @@
+Manifest-Version: 1.0
+Built-By: shivamvk
+Build-Jdk: 10.0.2
+Implementation-Title: Rest Api Spring
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: io.shivamvk.springbootqs
+Implementation-URL: https://projects.spring.io/spring-boot/#/spring-bo
+ ot-starter-parent/rest-api
+Created-By: Maven Integration for Eclipse
+
