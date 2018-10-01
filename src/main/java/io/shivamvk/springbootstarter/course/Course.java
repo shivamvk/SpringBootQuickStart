@@ -1,27 +1,26 @@
-package io.shivamvk.springbootstarter.topic;
+package io.shivamvk.springbootstarter.course;
 
 import javax.persistence.Entity;
 import javax.persistence.Id;
+import javax.persistence.ManyToOne;
+
+import io.shivamvk.springbootstarter.topic.Topic;
 
 @Entity
-public class Topic {
+public class Course {
 	
 	@Id
 	private String id;
 	private String name;
 	private String description;
+
+	@ManyToOne
+	private Topic topic;
 	
-	public Topic() {
+	public Course() {
 		
 	}
-
-	public Topic(String id, String name, String description) {
-		super();
-		this.id = id;
-		this.name = name;
-		this.description = description;
-	}
-
+	
 	public void setId(String id) {
 		this.id = id;
 	}
@@ -44,6 +43,14 @@ public class Topic {
 
 	public String getDescription() {
 		return description;
+	}
+
+	public Topic getTopic() {
+		return topic;
+	}
+
+	public void setTopic(Topic topic) {
+		this.topic = topic;
 	}
 	
 }
